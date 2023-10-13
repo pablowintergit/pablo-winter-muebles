@@ -579,6 +579,11 @@ main{
     justify-content: space-between;
 }
 
+#genderOptions label:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+
 #stateContainer{
     width: 30%;
 }
@@ -766,6 +771,10 @@ parametro2: unidad maxima
 
     .card-product-relation div{
         padding-top: 5px;
+    }
+
+    #contactForm label{
+        font-size: 3vh;
     }
 
     #follow-section{
