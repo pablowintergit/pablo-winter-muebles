@@ -630,22 +630,27 @@ main{
 /*Main*/
 
 /*Footer*/
+
+/*Implementacion de footer usando grid 
+Esta forma de implementar permite hacer un diseño responsive
+sin media querys
+auto-fit:se van a llenar las columnas con los items de acuerdo al espacio
+que tengan en pantalla
+minmax:parametro 1 ->valor minimo de la columna
+parametro2: unidad maxima
+*/
 .footer{
-    background-color: var(--main-backcolor);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    border: 0.px;
-    color:#fff;
-    padding: 0.1px;
     width: 100%;
-    /* flex-grow: 1; */
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+    background-color: var(--main-backcolor);
 }
 
 .footer-content{
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
     color: #fff;
 }
 
@@ -743,15 +748,8 @@ main{
         width: 80vw; 
     }
 
-    .footer{
-        flex-direction: column;
-        justify-content: space-around;
-        row-gap: 2vh;
-        align-items: center;
-    }
-
-    .footer-content{
+   /*  .footer-content{
         margin-bottom: 0px;
-    }
+    } */
 
 }
