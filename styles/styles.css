@@ -158,6 +158,10 @@ main{
 }
 
 /*General*/
+.nav-path{
+    text-align: center;
+ }
+
 .button-link{
     text-decoration: none;
     display: inline-block;
