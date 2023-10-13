@@ -28,7 +28,7 @@ figure,p{
 }
 
 /*Esto es porque aparece un espacio
-entre el menu y el borde de la pagina
+entre el menu y el borde de la pagina cuando haces scroll.
 Por ahora lo deje asi hasta encontrar una mejor solucion*/
 .sticky-top{
     top: -1px;
