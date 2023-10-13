@@ -21,6 +21,7 @@ html, body{
     background-color:#f5ebe2 ;
 }
 
+
 /*Esto lo hago porque parece que no se resetean todos los margenes
 que establece boostrap*/
 figure,p{
@@ -525,7 +526,7 @@ main{
     width: 500px;
     margin: 30px auto;
     background-color: #473144;
-    padding:20px 40px;
+    padding:10px 5px;
     border-radius: 15px;
     box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
 }
@@ -547,7 +548,7 @@ main{
     border:1px solid black;
     border-radius: 5px;
     overflow: auto;
-    height: 30px;
+    height: 40px;
 }
 
 #contactForm label{
@@ -773,9 +774,44 @@ parametro2: unidad maxima
         padding-top: 5px;
     }
 
-    #contactForm label{
-        font-size: 3vh;
+    #contactForm{
+        box-shadow: none;
+        width: 95%;
     }
+
+
+    #contactForm label{
+        font-size: 2.4vh;
+    }
+
+    #contactForm .vertical-item input, #contactForm .vertical-item select,
+    #contactForm .vertical-item select option {
+        font-size: 2.4vh;
+    }
+
+    #contactForm .vertical-item select option {
+        font-size: 1rem;
+    }
+
+    #contactForm .two-columns{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        row-gap: 10px;
+    }
+    
+    #stateContainer{
+        width: 100%;
+    }
+    
+    #contactCityContainer{
+        width: 100%;
+    }
+
+    #genderOptions label:nth-child(n+2) {
+        margin-left: 10px;
+    }
+    
 
     #follow-section{
         margin:2vh;
