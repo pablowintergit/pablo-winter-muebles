@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <section class="header-info">
+            <figure class="logo">
+                <img src="../../assets/main/images/logo.png" alt="Logo Empresa">
+            </figure>
+            <form class="header-search">
+                <input type="text" placeholder="¿Que estás buscando?">
+                <img src="../../assets/main/images/search.svg" alt="">
+            </form>
+            <ul class="header-contact">
+                <li>Whatsapp 35124787</li>
+                <li>Telefono 478797</li>
+                <li>Av. Corrientes 1050 Cordoba</li>
+            </ul>
+        </section>
+        <nav id="menuContainer">
+            <ul class="menu">
+                <li class="menu-item"><a href="../../index.html">Inicio</a></li>
+                <li class="menu-item">
+                    <a href="#">Dormitorios</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/products/beds.html">Camas</a></li>
+                        <li><a href="../../pages/products/light-tables.html">Mesas de Luz</a></li>        
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Comedor</a>
+                    <ul class="dropdown-menu" >
+                        <li><a href="../../pages/products/beds.html">Juegos de Mesa</a></li>
+                        <li><a href="../../pages/products/light-tables.html">Aparadores</a></li>        
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="../../pages/gallery/gallery.html">Galeria</a></li>
+                <li class="menu-item"><a href="../../pages/company/company.html">Empresa</a></li>
+                <li class="menu-item"><a href="../../pages/contact/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <section>
+        <!--TODO VER COMPU CORDOBA-->
+    </section>
+    <section>
+        <form id="contactForm" action="">
+            <div class="vertical-item">
+                <label for="contactName">Nombre</label>
+                <input id="contactName" type="text" placeholder="Ingrese nombre completo" required>
+            </div>
+            
+            <div class="vertical-item">
+                <label for="contactMail">Mail</label>
+                <input id="contactMail" type="text" placeholder="Ingrese su email">
+            </div>
+            
+            <div class="vertical-item">
+                <label for="contactPhone">Telefono</label>
+                <input id="contactPhone" type="text" placeholder="Ingrese su telefono">
+            </div>
+
+            <div>
+                <label for="">
+                    <input type="radio" name="gender" id="female" value="female" checked>
+                    Mujer
+                </label>
+
+                <label for="">
+                    <input type="radio" name="gender" id="male" value="male">
+                    Hombre
+                </label>
+                <label for="">
+                    <input type="radio" name="gender" id="other" value="other">
+                    Otro
+                </label>
+            </div>
+
+            <div class="two-columns">
+                <div id="stateContainer" class="vertical-item">
+                    <label for="states">Provincia</label>
+                    <select name="states" id="states">
+                        <option value="" selected disabled>Seleccionar</option>
+                        <option value="cordoba">Cordoba</option>
+                        <option value="buenos_aires">Buenos Aires</option>
+                        <option value="santa_fe">Santa Fe</option>
+                    </select>
+                </div>
+                <div id="contactCityContainer" class="vertical-item">
+                    <label for="contactCity">Localidad</label>
+                    <input id="contactCity" type="text" placeholder="Ingrese su Ciudad/Localidad">
+                </div>
+            </div>
+
+            <div class="vertical-item">
+                <label for="contactQuestion">¿Que productos te interesan?</label>
+                <input id="contactQuestion" type="text">
+            </div>
+
+            <div class="vertical-item">
+                <label for="contactQuery">Tu Consulta</label>
+                <textarea name="contactQuery" id="contactQuery" cols="30" rows="10"></textarea>
+            </div>
+            <div class="send-container">
+                <input type="submit">
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div id="footerProducts" class="footer-content">
+            <h5>Productos</h5>   
+                <ul>
+                    <li><a href="../../pages/products/beds.html">Camas</a></li>
+                    <li><a href="../../pages/products/light-table.html">Mesas de Luz</a></li>        
+                    <li><a href="../../pages/products/beds.html">Juegos de Mesa</a></li>
+                    <li><a href="../../pages/products/light-table.html">Aparadores</a></li>        
+                </ul>
+        </div>
+        <div id="contacMedia" class="footer-content">
+            <h5>Medios de Contacto</h5>
+            <ul>
+                <li>Whatsapp 35124787</li>
+                <li>Telefono 478797</li>
+                <li>Av. Corrientes 1050 Cordoba</li>
+            </ul>
+        </div>
+        <div id="footerInformation" class="footer-content">
+            <h5>Informacion</h5>
+            <ul>
+                <li><a href="../../pages/company/company.html">Empresa</a></li>
+                <li>Garantia</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h5>Seguinos en las redes</h5>
+            <ul id="footerMedia">
+                <li><figure class="icon-image"><img src="../../assets/main/images/facebook.png" alt=""></figure></li>
+                <li><figure class="icon-image"><img src="../../assets/main/images/twitter.png" alt=""></figure></li>
+                <li><figure class="icon-image"><img src="../../assets/main/images/youtube.png" alt=""></figure></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
