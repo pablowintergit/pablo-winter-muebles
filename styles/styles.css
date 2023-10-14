@@ -648,6 +648,12 @@ main{
     float: right;
 }
 
+.company-name{
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+}
+
 
 /*Empresa*/
 
