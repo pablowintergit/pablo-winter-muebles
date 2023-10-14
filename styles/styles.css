@@ -25,7 +25,7 @@ html, body{
 /*Esto lo hago porque parece que no se resetean todos los margenes
 que establece boostrap*/
 figure,p{
-    margin:0px !important;
+    margin:0px;
 }
 
 /*Esto es porque aparece un espacio
@@ -790,6 +790,48 @@ parametro2: unidad maxima
         box-shadow: none;
         width: 95%;
     }
+
+    /*Empresa*/
+    .company-section{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .company-section p{
+        margin-left: initial;
+        margin-right: initial;
+        margin-top:10px;
+    }
+
+    .company-thumbnail{
+        max-width: 400px;
+        aspect-ratio: 1/1;
+        height: auto;
+    }
+
+    .company-thumbnail-left{
+        margin-right:initial;
+        clear:both;
+        float: none;
+    }
+
+    .company-thumbnail img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .company-thumbnail-right{
+        margin-left: initial;
+        clear: both;
+        float: none;
+    }
+
+
+    /*Empresa*/
 
 
     #contactForm label{
