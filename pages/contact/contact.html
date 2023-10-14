@@ -74,72 +74,76 @@
             </div>
         </div>
     </nav>
-    
-    <section>
-    </section>
-    <section>
-        <form id="contactForm" action="">
-            <div class="vertical-item">
-                <label for="contactName">Nombre</label>
-                <input id="contactName" type="text" placeholder="Ingrese nombre completo" required>
-            </div>
-            
-            <div class="vertical-item">
-                <label for="contactMail">Mail</label>
-                <input id="contactMail" type="email" placeholder="Ingrese su email">
-            </div>
-            
-            <div class="vertical-item">
-                <label for="contactPhone">Telefono</label>
-                <input id="contactPhone" type="text" placeholder="Ingrese su telefono">
-            </div>
-
-            <div id="genderOptions">
-                <label for="" >
-                    <input type="radio" name="gender" id="female" value="female" checked>
-                    Mujer
-                </label>
-
-                <label for="" >
-                    <input type="radio" name="gender" id="male" value="male">
-                    Hombre
-                </label>
-                <label for="">
-                    <input type="radio" name="gender" id="other" value="other">
-                    Otro
-                </label>
-            </div>
-
-            <div class="two-columns">
-                <div id="stateContainer" class="vertical-item">
-                    <label for="states">Provincia</label>
-                    <select name="states" id="states">
-                        <option value="" selected disabled>Seleccionar</option>
-                        <option value="cordoba">Cordoba</option>
-                        <option value="buenos_aires">Buenos Aires</option>
-                        <option value="santa_fe">Santa Fe</option>
-                    </select>
+    <main>
+        <section class="nav-path">
+            <a class="button-link" href="../../index.html">Inicio</a>
+            <span>></span>
+            <span>Contacto</span>
+        </section>
+        <section>
+            <form id="contactForm" action="">
+                <div class="vertical-item">
+                    <label for="contactName">Nombre</label>
+                    <input id="contactName" type="text" placeholder="Ingrese nombre completo" required>
                 </div>
-                <div id="contactCityContainer" class="vertical-item">
-                    <label for="contactCity">Localidad</label>
-                    <input id="contactCity" type="text" placeholder="Ingrese su Ciudad/Localidad">
+                
+                <div class="vertical-item">
+                    <label for="contactMail">Mail</label>
+                    <input id="contactMail" type="email" placeholder="Ingrese su email">
                 </div>
-            </div>
+                
+                <div class="vertical-item">
+                    <label for="contactPhone">Telefono</label>
+                    <input id="contactPhone" type="text" placeholder="Ingrese su telefono">
+                </div>
 
-            <div class="vertical-item">
-                <label for="contactQuestion">¿Que productos te interesan?</label>
-                <input id="contactQuestion" type="text">
-            </div>
+                <div id="genderOptions">
+                    <label for="" >
+                        <input type="radio" name="gender" id="female" value="female" checked>
+                        Mujer
+                    </label>
 
-            <div class="vertical-item">
-                <label for="contactQuery">Tu Consulta</label>
-                <textarea name="contactQuery" id="contactQuery" cols="30" rows="10"></textarea>
-            </div>
-            <div class="send-container">
-                <input type="submit">
-            </div>
-        </form>
-    </section>
+                    <label for="" >
+                        <input type="radio" name="gender" id="male" value="male">
+                        Hombre
+                    </label>
+                    <label for="">
+                        <input type="radio" name="gender" id="other" value="other">
+                        Otro
+                    </label>
+                </div>
+
+                <div class="two-columns">
+                    <div id="stateContainer" class="vertical-item">
+                        <label for="states">Provincia</label>
+                        <select name="states" id="states">
+                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="cordoba">Cordoba</option>
+                            <option value="buenos_aires">Buenos Aires</option>
+                            <option value="santa_fe">Santa Fe</option>
+                        </select>
+                    </div>
+                    <div id="contactCityContainer" class="vertical-item">
+                        <label for="contactCity">Localidad</label>
+                        <input id="contactCity" type="text" placeholder="Ingrese su Ciudad/Localidad">
+                    </div>
+                </div>
+
+                <div class="vertical-item">
+                    <label for="contactQuestion">¿Que productos te interesan?</label>
+                    <input id="contactQuestion" type="text">
+                </div>
+
+                <div class="vertical-item">
+                    <label for="contactQuery">Tu Consulta</label>
+                    <textarea name="contactQuery" id="contactQuery" cols="30" rows="10"></textarea>
+                </div>
+                <div class="send-container">
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
     <footer class="footer">
         <div id="footerProducts" class="footer-content">
             <h5>Productos</h5>   
