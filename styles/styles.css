@@ -631,7 +631,7 @@ main{
     height: auto;
     border: 1px #cccccc solid;
     padding: 4px;
-    margin: auto;
+    margin: auto; 
 }
 
 .company-thumbnail figcaption{
@@ -825,13 +825,11 @@ parametro2: unidad maxima
     }
 
     .company-thumbnail{
-        max-width: 400px;
-        aspect-ratio: 1/1;
-        height: auto;
+        aspect-ratio:initial;
     }
 
     .company-thumbnail-left{
-        margin-right:initial;
+        margin:0 0;
         clear:both;
         float: none;
     }
@@ -842,7 +840,7 @@ parametro2: unidad maxima
     }
 
     .company-thumbnail-right{
-        margin-left: initial;
+        margin:0 0;
         clear: both;
         float: none;
     }
