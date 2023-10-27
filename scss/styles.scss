@@ -1,4 +1,4 @@
-@use 'utilities/variables';
+@use 'base/root';
 @use 'base/reset';
 @use 'base/typo';
 @use 'layout/global';
@@ -6,3 +6,4 @@
 @use 'layout/footer';
 @use 'layout/navbar';
 @use 'layout/breadcumb';
+@use 'pages/home';

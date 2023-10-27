@@ -5,13 +5,3 @@ $catogory-header:#82724E;
 $card-product:$main-backcolor;
 $product-outstanding--backcolor:red;
 $product-detail--backcolor:#A20021;
-
-:root{
-    --main-backcolor:#{$main-backcolor};
-    --main-hover-color:#{$main-hover-color};
-    --shadow:#{$shadow};
-    --catogory-header:#{$catogory-header};
-    --card-product:#{$card-product};
-    --product-outstanding--backcolor:#{$product-outstanding--backcolor};
-    --product-detail--backcolor:#{$product-detail--backcolor};
-}

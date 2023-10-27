@@ -32,6 +32,16 @@ main {
   margin-top: 50px;
 }
 
+.overlay {
+  width: 100%;
+  background: var(--shadow);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-info {
   padding: 10px 5px;
   background-image: url("../assets/main/images/mark-champs-Id2IIl1jOB0-unsplash.jpg");
@@ -185,6 +195,54 @@ main {
 }
 .button-link:hover {
   background-color: var(--main-hover-color);
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.category-container a {
+  text-decoration: none;
+}
+
+.category-header-container {
+  text-align: center;
+}
+
+.category-header {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--catogory-header);
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+  margin: 10px auto;
+}
+
+.catetory-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.category-option {
+  width: 400px;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

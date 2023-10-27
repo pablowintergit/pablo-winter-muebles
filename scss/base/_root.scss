@@ -1,0 +1,11 @@
+@use '../utilities/variables' as v;
+
+:root{
+    --main-backcolor:#{v.$main-backcolor};
+    --main-hover-color:#{v.$main-hover-color};
+    --shadow:#{v.$shadow};
+    --catogory-header:#{v.$catogory-header};
+    --card-product:#{v.$card-product};
+    --product-outstanding--backcolor:#{v.$product-outstanding--backcolor};
+    --product-detail--backcolor:#{v.$product-detail--backcolor};
+}
