@@ -1,0 +1,57 @@
+.navbar--customized{
+    background-color: var(--main-backcolor);
+    
+    &.sticky-top{
+        top: -1px; 
+    }
+
+    .navbar-collapse{
+        flex-grow: 0;    
+    }        
+
+    .nav-link{
+        font-weight:600;
+        color:white;
+
+        &:focus{
+            color: yellow;
+        }
+
+        &:hover{
+            background-color:var(--main-hover-color);
+            color:white;
+        }
+    }
+
+    .navbar-nav{
+        .nav-link{
+            &.show{
+                color: yellow;
+            }
+        }
+    }
+
+    .dropdown-menu{
+        background-color: var(--main-backcolor);
+    }
+
+    .dropdown-item{
+        font-weight:600;
+        color:white;
+
+        &:hover{
+            color:white;
+            background-color:var(--main-hover-color);
+        }
+    }
+
+    .navbar-toggler{
+        color:yellow;
+        border:1px solid white;
+    }
+
+    .navbar-toggler-icon{
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=ffffff');
+    }
+
+}

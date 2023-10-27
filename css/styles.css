@@ -81,4 +81,46 @@ main {
   padding: 5px;
 }
 
+.navbar--customized {
+  background-color: var(--main-backcolor);
+}
+.navbar--customized.sticky-top {
+  top: -1px;
+}
+.navbar--customized .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar--customized .nav-link {
+  font-weight: 600;
+  color: white;
+}
+.navbar--customized .nav-link:focus {
+  color: yellow;
+}
+.navbar--customized .nav-link:hover {
+  background-color: var(--main-hover-color);
+  color: white;
+}
+.navbar--customized .navbar-nav .nav-link.show {
+  color: yellow;
+}
+.navbar--customized .dropdown-menu {
+  background-color: var(--main-backcolor);
+}
+.navbar--customized .dropdown-item {
+  font-weight: 600;
+  color: white;
+}
+.navbar--customized .dropdown-item:hover {
+  color: white;
+  background-color: var(--main-hover-color);
+}
+.navbar--customized .navbar-toggler {
+  color: yellow;
+  border: 1px solid white;
+}
+.navbar--customized .navbar-toggler-icon {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger1.svg?color=ffffff");
+}
+
 /*# sourceMappingURL=styles.css.map */
