@@ -1,0 +1,16 @@
+.nav-path{
+    text-align: center;
+ }
+
+.button-link{
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--main-backcolor);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    &:hover{
+        background-color: var(--main-hover-color);
+    }
+    
+}
