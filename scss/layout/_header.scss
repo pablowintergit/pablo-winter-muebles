@@ -1,0 +1,59 @@
+.header-info{
+    padding: 10px 5px;
+    background-image: url('../assets/main/images/mark-champs-Id2IIl1jOB0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+        .logo{
+            width: 100px;
+            aspect-ratio: 1/1;
+            height: auto;
+            overflow: auto;
+            border-radius: 15px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;                
+                }        
+        }
+}
+
+.header-search{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    border:1px solid gray;
+
+        input{
+            font-size: 1em; 
+            border: none;
+            margin-left: 10px;
+            width: 100%;
+            outline: none;        
+        }
+        
+        img{
+            display: inline-block;
+            width: 40px;        
+        }
+}
+
+.header-contact{
+        li{
+            list-style-type: none;
+            color:white;
+            font-weight: 600;
+            padding: 5px;
+        }
+}
+
+

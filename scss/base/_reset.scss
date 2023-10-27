@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+//Si bien estan resetados arriba los tuve que volver a resetear
+// por un problema con la especificidad, es un problema con boostrap
+figure,p{
+    margin:0px;
+}
