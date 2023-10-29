@@ -1,0 +1,56 @@
+#companySection{
+    margin: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.company-section p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.company-thumbnail{
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    height: auto;
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto; 
+}
+
+.company-thumbnail figcaption{
+    background-color: var(--main-backcolor);
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+.company-thumbnail-left{
+    margin-right: 10px;
+    clear: left;
+    float: left;
+}
+
+.company-thumbnail img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.company-thumbnail-right{
+    margin-left: 10px;
+    clear: right;
+    float: right;
+}
+
+.company-name{
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+}
