@@ -1,3 +1,7 @@
+.product-list-container{
+    margin-top: 5vh;
+}
+
 .product-relation-section{
     margin-top: 50px;
 }
@@ -32,10 +36,15 @@
 }
 
 .product-related-section{
+    //Uso extends a proposito ilustrativo
+    //tambien se podria anidar dentro de .product-relation-section
+    //evitando duplicacion de codigo en el output
+    @extend .product-relation-section;
     margin-bottom: 20px;
 }
 
 .product-related-header{
+    @extend .product-relation-header;
     background-color:var(--product-detail--backcolor);
     color: #fff;
 }
@@ -47,11 +56,10 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: auto;
-}
-
-.product-thumbnail img{
-    width: 100%;
-    object-fit: cover;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
 }
 
 
