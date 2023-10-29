@@ -1,12 +1,8 @@
+//Categorias
 .category-container{
     display: flex;
     flex-direction: column;
     gap: 100px;
-    
-}
-
-.category-container a{
-    text-decoration: none;
 }
 
 .category-header-container{
@@ -34,8 +30,6 @@
     flex-wrap: wrap;
 }
 
-
-
 .category-option{
     width: 400px;
     aspect-ratio: 1/1;
@@ -48,3 +42,48 @@
     overflow: hidden;
     border-radius: 15px;
 }
+
+#bedCategory{
+    background-image: url('../assets/main/images/bed-main.jpeg');
+}
+
+#lightTableCategory{
+    background-image:url('../assets/main/images/light-table.jpeg');
+}
+
+#diningRoomCategory{
+    background-image:url('../assets/main/images/dining-rom.jpeg');
+}
+
+#sideBarCategory{
+    background-image:url('../assets/main/images/side-board.jpeg');
+}
+
+/*Boton seguinos en Instagram*/
+#follow-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    margin:100px;
+}
+
+#follow-section img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    height: auto;
+    display: inline-block;
+}
+
+
+#follow-button{
+    display: inline-block;
+    background-color: black;
+    color:white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 2em;
+    width: 358px;
+}
+
