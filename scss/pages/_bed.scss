@@ -1,0 +1,19 @@
+#bedOptions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    column-gap: 20%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#bedOptions label, #bedOptions select{
+    display: block;
+} 
+
+#bedOptions label{
+    margin-bottom: 5px;
+}
+

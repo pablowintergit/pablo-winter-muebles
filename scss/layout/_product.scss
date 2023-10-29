@@ -26,26 +26,6 @@
     row-gap: 5px;
 }
 
-.card-product-relation{
-    width: 300px;
-    height: auto;
-    text-align: center;
-    padding:8px 8px;
-    border-radius: 10px;
-}
-
-.card-product-relation div{
-    padding-top: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.card-product-containter{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .product-outstanding-header{
     background-color:var(--product-outstanding--backcolor);
     color: #fff;
@@ -74,25 +54,7 @@
     object-fit: cover;
 }
 
-.card-product-outstanding{
-    background-color:var(--product-outstanding--backcolor);
-    color: white;
-}
 
-.card-product-related{
-    background-color:var(--product-detail--backcolor);
-    color: white;
-}
-
-.card-product-outstanding div{
-    color:black;
-    background-color: #fff;
-}
-
-.card-product-related div{
-    color:black;
-    background-color: #fff;
-}
 
 
 
