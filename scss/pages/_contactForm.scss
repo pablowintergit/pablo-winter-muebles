@@ -1,3 +1,6 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins';
+
 #contactForm{
     display: flex;
     flex-direction: column;
@@ -8,26 +11,26 @@
     padding:10px 5px;
     border-radius: 15px;
     box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
-        .vertical-item *{
-            display: block;
-            width: 100%;
-            margin-bottom: 5px;
-        }
-        .vertical-item input, select, textarea {
-            font-size: 1em;
-            border:1px solid black;
-            border-radius: 5px;
-            outline: none;
-            overflow: auto;
-            &:focus{
-               box-shadow: 0 0 0 2px #87b9eb;
+        .vertical-item{
+            *{
+                display: block;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            input, select{
+                height: 40px;
+            }
+            input, select, textarea{
+                font-size: 1em;
+                border:1px solid black;
+                border-radius: 5px;
+                outline: none;
+                overflow: auto;
+                &:focus{
+                box-shadow: 0 0 0 2px #87b9eb;
+                }
             }
         }
-
-        .vertical-item input, select {
-            height: 40px;
-        }
-
         label{
             color: #fff;
         }
@@ -60,5 +63,38 @@
         
         #contactCityContainer{
             width: 65%;
+        }
+
+        @include mixins.mobile(){
+            box-shadow: none;
+            width: 95%;
+            
+            label{
+                font-size: 2.4vh;
+            }
+            .vertical-item {
+                input, select{
+                    font-size: 2.4vh;
+                }
+                select option{
+                    font-size: 1rem;
+                }
+            }
+            .two-columns{
+                @include mixins.flex-display($flex-layout:v.$flex-layout-column,$align-items:flex-start, $row-gap:10px,$flex-wrap:nowrap);
+            }
+            #stateContainer{
+                width: 100%;
+            }
+            
+            #contactCityContainer{
+                width: 100%;
+            }
+        
+            #genderOptions label:nth-child(n+2) {
+                margin-left: 10px;
+            }
+
+
         }
 }

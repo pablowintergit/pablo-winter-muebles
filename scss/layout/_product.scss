@@ -1,3 +1,6 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins';
+
 .product-list-container{
     margin-top: 5vh;
 }
@@ -28,6 +31,9 @@
     align-items: flex-start;
     flex-wrap: wrap;
     row-gap: 5px;
+    @include mixins.mobile(){
+        @include mixins.flex-display($flex-layout:v.$flex-layout-column,$row-gap:5vh);
+    }
 }
 
 .product-outstanding-header{

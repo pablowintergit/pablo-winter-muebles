@@ -65,6 +65,16 @@ main {
   height: 100%;
   object-fit: cover;
 }
+@media screen and (max-width: 576px) {
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+  }
+}
 
 .header-search {
   width: 50%;
@@ -87,12 +97,22 @@ main {
   display: inline-block;
   width: 40px;
 }
+@media screen and (max-width: 576px) {
+  .header-search {
+    width: 100%;
+  }
+}
 
 .header-contact li {
   list-style-type: none;
   color: white;
   font-weight: 600;
   padding: 5px;
+}
+@media screen and (max-width: 576px) {
+  .header-contact {
+    display: none;
+  }
 }
 
 .footer {
@@ -228,6 +248,16 @@ main {
   flex-wrap: wrap;
   row-gap: 5px;
 }
+@media screen and (max-width: 576px) {
+  .product-relation-group {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+  }
+}
 
 .product-outstanding-header {
   background-color: var(--product-outstanding--backcolor);
@@ -293,6 +323,14 @@ main {
   background-color: var(--product-detail--backcolor);
   color: white;
 }
+@media screen and (max-width: 576px) {
+  .card-product-relation {
+    width: 60vw;
+  }
+  .card-product-relation div {
+    padding-top: 5px;
+  }
+}
 
 /*Tarjetas en lista de productos de una categoria determinada ej camas*/
 .card-product-list {
@@ -330,7 +368,7 @@ main {
   margin: 0 auto;
   margin-top: 20px;
 }
-.card-product-detail .card-product-detail-thumbnail {
+.card-product-detail-thumbnail {
   width: 50%;
   min-width: 150px;
   height: auto;
@@ -338,7 +376,7 @@ main {
   border-bottom-left-radius: 10px;
   overflow: auto;
 }
-.card-product-detail .card-product-detail-thumbnail img {
+.card-product-detail-thumbnail img {
   width: 100%;
   object-fit: cover;
 }
@@ -354,6 +392,29 @@ main {
 .card-product-detail p {
   line-height: 2;
   font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .card-product-detail {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .card-product-detail-thumbnail {
+    width: 100%;
+    border-bottom-left-radius: initial;
+    border-top-right-radius: 10px;
+  }
+  .card-product-detail > div {
+    width: 100%;
+    border-top-right-radius: initial;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .card-product-description {
@@ -407,6 +468,12 @@ main {
   align-items: center;
   overflow: hidden;
   border-radius: 15px;
+}
+@media screen and (max-width: 576px) {
+  .category-container .catetory-group .category-option {
+    gap: 5vh;
+    width: 80vw;
+  }
 }
 
 #bedCategory {
@@ -483,18 +550,18 @@ main {
   width: 100%;
   margin-bottom: 5px;
 }
-#contactForm .vertical-item input, #contactForm select, #contactForm textarea {
+#contactForm .vertical-item input, #contactForm .vertical-item select {
+  height: 40px;
+}
+#contactForm .vertical-item input, #contactForm .vertical-item select, #contactForm .vertical-item textarea {
   font-size: 1em;
   border: 1px solid black;
   border-radius: 5px;
   outline: none;
   overflow: auto;
 }
-#contactForm .vertical-item input:focus, #contactForm select:focus, #contactForm textarea:focus {
+#contactForm .vertical-item input:focus, #contactForm .vertical-item select:focus, #contactForm .vertical-item textarea:focus {
   box-shadow: 0 0 0 2px #87b9eb;
-}
-#contactForm .vertical-item input, #contactForm select {
-  height: 40px;
 }
 #contactForm label {
   color: #fff;
@@ -522,6 +589,38 @@ main {
 }
 #contactForm #contactCityContainer {
   width: 65%;
+}
+@media screen and (max-width: 576px) {
+  #contactForm {
+    box-shadow: none;
+    width: 95%;
+  }
+  #contactForm label {
+    font-size: 2.4vh;
+  }
+  #contactForm .vertical-item input, #contactForm .vertical-item select {
+    font-size: 2.4vh;
+  }
+  #contactForm .vertical-item select option {
+    font-size: 1rem;
+  }
+  #contactForm .two-columns {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    row-gap: 10px;
+  }
+  #contactForm #stateContainer {
+    width: 100%;
+  }
+  #contactForm #contactCityContainer {
+    width: 100%;
+  }
+  #contactForm #genderOptions label:nth-child(n+2) {
+    margin-left: 10px;
+  }
 }
 
 #companySection {
@@ -572,6 +671,31 @@ main {
   font-style: italic;
   padding: 2px;
   text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .company-section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .company-section p {
+    margin-left: initial;
+    margin-right: initial;
+    margin-top: 10px;
+  }
+  .company-section .company-thumbnail {
+    aspect-ratio: initial;
+  }
+  .company-section .company-thumbnail-left, .company-section .company-thumbnail-right {
+    margin: 0 0;
+    clear: both;
+    float: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,5 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins';
 #companySection{
     margin: 10px;
     margin-bottom: 10px;
@@ -51,5 +53,23 @@
                     text-align: center;
                 }                
         }
+    @include mixins.mobile(){
+        @include mixins.flex-display($flex-layout:v.$flex-layout-column,$row-gap:2vh);
+        margin-top: 20px;
+        margin-bottom: 20px;
+            p{
+                margin-left: initial;
+                margin-right: initial;
+                margin-top:10px;
+            }
+            .company-thumbnail{
+                aspect-ratio:initial;
+                &-left, &-right{
+                    margin:0 0;
+                    clear:both;
+                    float: none;
+                }
+            }
+    }
 }
 
