@@ -1,0 +1,36 @@
+@use 'variables';
+
+@mixin tablet {
+    @media screen and (max-width: 900px) {
+        @content
+    }
+};
+
+@mixin mobile{
+    @media screen and (max-width: 520px) {
+        @content
+    }
+};
+
+@mixin flex-display($flex-layout,$align-items:center,$column-gap:null,$row-gap:null,$flex-wrap:wrap){
+    display: flex;
+    @if $flex-layout==variables.$flex-layout-column{
+        flex-direction: column;
+        justify-items: center;
+        align-items: $align-items;
+    }@else{
+        flex-direction: row;
+        justify-items: center;
+        align-items: $align-items;
+        flex-wrap: $flex-wrap;
+    }
+
+    @if $row-gap!=null{
+        row-gap: $row-gap;
+    }
+
+    @if $column-gap!=null{
+        row-gap: $row-gap;
+    }
+    
+}
