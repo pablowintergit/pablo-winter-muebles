@@ -1,13 +1,13 @@
 @use 'variables';
 
 @mixin tablet {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 768px) {
         @content
     }
 };
 
 @mixin mobile{
-    @media screen and (max-width: 520px) {
+    @media screen and (max-width: 576px) {
         @content
     }
 };
@@ -32,5 +32,5 @@
     @if $column-gap!=null{
         row-gap: $row-gap;
     }
-    
+
 }
