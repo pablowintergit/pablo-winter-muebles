@@ -256,6 +256,14 @@ main {
   object-fit: cover;
 }
 
+.carousel-control-prev-icon--customized {
+  background-image: url("../assets/main/images/chevron-left-solid.svg");
+}
+
+.carousel-control-next-icon--customized {
+  background-image: url("../assets/main/images/chevron-right-solid.svg");
+}
+
 /*Productos relacionados y destacados*/
 .card-product-containter {
   display: flex;
@@ -347,15 +355,16 @@ main {
   line-height: 2;
   font-weight: 500;
 }
-.card-product-detail .card-product-description {
+
+.card-product-description {
   width: 95%;
   margin: 0 auto;
   margin-top: 20px;
 }
-.card-product-detail .card-product-description p {
+.card-product-description p {
   margin-bottom: 10px;
 }
-.card-product-detail .card-product-description h4 {
+.card-product-description h4 {
   margin-top: 1rem;
   margin-bottom: 0.2rem;
 }
@@ -451,11 +460,9 @@ main {
   margin-top: 50px;
   margin-bottom: 40px;
 }
-
 #bedOptions label, #bedOptions select {
   display: block;
 }
-
 #bedOptions label {
   margin-bottom: 5px;
 }

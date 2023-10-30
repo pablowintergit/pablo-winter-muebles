@@ -7,13 +7,10 @@
     column-gap: 20%;
     margin-top: 50px;
     margin-bottom: 40px;
+    label, select{
+        display: block;
+    }
+    label{
+        margin-bottom: 5px;
+    }
 }
-
-#bedOptions label, #bedOptions select{
-    display: block;
-} 
-
-#bedOptions label{
-    margin-bottom: 5px;
-}
-
