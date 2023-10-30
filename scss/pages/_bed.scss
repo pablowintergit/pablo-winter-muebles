@@ -1,9 +1,14 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins';
+
 #bedOptions{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
-    align-items: flex-start;
+    align-items: flex-start; */
+    @include mixins.flex-display($flex-layout:v.$flex-layout-row,$align-items:flex-start,$justify-content:start);
+    
     column-gap: 20%;
     margin-top: 50px;
     margin-bottom: 40px;

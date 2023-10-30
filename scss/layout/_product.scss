@@ -25,12 +25,15 @@
 }
 
 .product-relation-group{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    row-gap: 5px;
+    row-gap: 5px; */
+    @include mixins.flex-display($flex-layout:v.$flex-layout-row,$align-items:flex-start,
+                                $justify-content:space-around, 
+                                $row-gap:5px);
     @include mixins.mobile(){
         @include mixins.flex-display($flex-layout:v.$flex-layout-column,$row-gap:5vh);
     }

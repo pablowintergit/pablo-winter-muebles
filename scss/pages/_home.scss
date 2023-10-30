@@ -24,12 +24,14 @@
     }
 
     .catetory-group{
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 50px;
         flex-wrap: wrap;
+ */
+        @include mixins.flex-display($flex-layout:v.$flex-layout-row,$justify-content:center,$gap:50px);
 
         .category-option{
             width: 400px;

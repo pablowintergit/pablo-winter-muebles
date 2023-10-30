@@ -47,9 +47,15 @@ main {
   background-image: url("../assets/main/images/mark-champs-Id2IIl1jOB0-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  justify-items: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -79,9 +85,14 @@ main {
 .header-search {
   width: 50%;
   height: 50px;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
   display: flex;
   flex-direction: row;
+  justify-items: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: white;
   border-radius: 30px;
   border: 1px solid gray;
@@ -241,9 +252,16 @@ main {
 }
 
 .product-relation-group {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 5px; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  justify-items: center;
   align-items: flex-start;
   flex-wrap: wrap;
   row-gap: 5px;
@@ -296,8 +314,14 @@ main {
 
 /*Productos relacionados y destacados*/
 .card-product-containter {
+  /* display: flex;
+  justify-content: center; */
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -355,8 +379,13 @@ main {
 
 /*Ficha Producto*/
 .card-product-detail {
-  display: flex;
+  /* display: flex;
   justify-content: center;
+  flex-wrap: wrap; */
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 95%;
   height: 300px;
@@ -450,12 +479,20 @@ main {
   margin: 10px auto;
 }
 .category-container .catetory-group {
+  /* display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         gap: 50px;
+         flex-wrap: wrap;
+  */
   display: flex;
   flex-direction: row;
   justify-content: center;
+  justify-items: center;
   align-items: center;
-  gap: 50px;
   flex-wrap: wrap;
+  gap: 50px;
 }
 .category-container .catetory-group .category-option {
   width: 400px;
@@ -518,11 +555,17 @@ main {
 }
 
 #bedOptions {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: start;
+  align-items: flex-start; */
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  justify-items: center;
   align-items: flex-start;
+  flex-wrap: wrap;
   column-gap: 20%;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -535,8 +578,14 @@ main {
 }
 
 #contactForm {
+  /* display: flex;
+  flex-direction: column;
+  row-gap: 20px; */
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  align-items: initial;
+  flex-wrap: wrap;
   row-gap: 20px;
   width: 500px;
   margin: 30px auto;
