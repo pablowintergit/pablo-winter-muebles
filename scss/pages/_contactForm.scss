@@ -8,75 +8,57 @@
     padding:10px 5px;
     border-radius: 15px;
     box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
+        .vertical-item *{
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .vertical-item input, select, textarea {
+            font-size: 1em;
+            border:1px solid black;
+            border-radius: 5px;
+            outline: none;
+            overflow: auto;
+            &:focus{
+               box-shadow: 0 0 0 2px #87b9eb;
+            }
+        }
+
+        .vertical-item input, select {
+            height: 40px;
+        }
+
+        label{
+            color: #fff;
+        }
+
+        .send-container{
+            text-align: right;
+        }
+
+        input[type=submit]{
+            font-size: 1em;
+            font-weight: 500;
+            padding: 5px;
+        }
+
+        .two-columns{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        #genderOptions label:nth-child(n+2) {
+            margin-left: 10px;
+        }
+        
+        #stateContainer{
+            width: 30%;
+        }
+        
+        #contactCityContainer{
+            width: 65%;
+        }
 }
-
-#contactForm .vertical-item *{
-    display: block;
-    width: 100%;
-    margin-bottom: 3px;
-}
-
-#contactForm .vertical-item *{
-    display: block;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-#contactForm .vertical-item input, #contactForm .vertical-item select {
-    font-size: 1em;
-    border:1px solid black;
-    border-radius: 5px;
-    overflow: auto;
-    height: 40px;
-}
-
-#contactForm .vertical-item textarea{
-    font-size: 1em;
-    border:1px solid black;
-    border-radius: 5px;
-    overflow: auto;
-}
-
-#contactForm .vertical-item textarea, input, select{
-    outline: none;
-}
-
-#contactForm .vertical-item textarea:focus, input:focus, select:focus{
-    box-shadow: 0 0 0 2px #87b9eb;
-}
-
-
-#contactForm label{
-    color: #fff;
-}
-
-#contactForm .send-container{
-    text-align: right;
-}
-
-#contactForm input[type="submit"]{
-    font-size: 1em;
-    font-weight: 500;
-    padding: 5px;
-}
-
-#contactForm .two-columns{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-#genderOptions label:nth-child(n+2) {
-    margin-left: 10px;
-}
-
-#stateContainer{
-    width: 30%;
-}
-
-#contactCityContainer{
-    width: 65%;
-}
-

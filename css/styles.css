@@ -478,56 +478,35 @@ main {
   border-radius: 15px;
   box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
 }
-
-#contactForm .vertical-item * {
-  display: block;
-  width: 100%;
-  margin-bottom: 3px;
-}
-
 #contactForm .vertical-item * {
   display: block;
   width: 100%;
   margin-bottom: 5px;
 }
-
-#contactForm .vertical-item input, #contactForm .vertical-item select {
+#contactForm .vertical-item input, #contactForm select, #contactForm textarea {
   font-size: 1em;
   border: 1px solid black;
   border-radius: 5px;
-  overflow: auto;
-  height: 40px;
-}
-
-#contactForm .vertical-item textarea {
-  font-size: 1em;
-  border: 1px solid black;
-  border-radius: 5px;
-  overflow: auto;
-}
-
-#contactForm .vertical-item textarea, input, select {
   outline: none;
+  overflow: auto;
 }
-
-#contactForm .vertical-item textarea:focus, input:focus, select:focus {
+#contactForm .vertical-item input:focus, #contactForm select:focus, #contactForm textarea:focus {
   box-shadow: 0 0 0 2px #87b9eb;
 }
-
+#contactForm .vertical-item input, #contactForm select {
+  height: 40px;
+}
 #contactForm label {
   color: #fff;
 }
-
 #contactForm .send-container {
   text-align: right;
 }
-
 #contactForm input[type=submit] {
   font-size: 1em;
   font-weight: 500;
   padding: 5px;
 }
-
 #contactForm .two-columns {
   display: flex;
   flex-direction: row;
@@ -535,16 +514,13 @@ main {
   align-items: flex-start;
   justify-content: space-between;
 }
-
-#genderOptions label:nth-child(n+2) {
+#contactForm #genderOptions label:nth-child(n+2) {
   margin-left: 10px;
 }
-
-#stateContainer {
+#contactForm #stateContainer {
   width: 30%;
 }
-
-#contactCityContainer {
+#contactForm #contactCityContainer {
   width: 65%;
 }
 
