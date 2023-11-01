@@ -1,0 +1,22 @@
+.gallery-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        figure{
+            height: auto;
+            border: 1px #cccccc solid;
+            padding: 4px;
+            margin: auto; 
+            img{
+                width: 100%;
+                object-fit: cover;
+            }            
+            figcaption{
+                background-color: var(--main-backcolor);
+                color: white;
+                font-style: italic;
+                padding: 2px;
+                text-align: center;
+            }                
+        }
+}
