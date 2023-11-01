@@ -25,7 +25,7 @@
 }
 
 .header-search{
-    @include mixins.flex-display($flex-layout:v.$flex-layout-row);
+    @include mixins.flex-display($flex-layout:v.$flex-layout-row,$flex-wrap:nowrap);
     width: 50%;
     height: 50px;
     background-color: white;

@@ -86,7 +86,7 @@ main {
   flex-direction: row;
   justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 50%;
   height: 50px;
   background-color: white;
