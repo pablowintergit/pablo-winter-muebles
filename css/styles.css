@@ -23,8 +23,24 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: calc(1rem + 1.2vw);
+}
+
+h2 {
+  font-size: calc(1rem + 1vw);
+}
+
+h3 {
+  font-size: calc(0.8rem + 0.6vw);
+}
+
 h4 {
-  font-size: calc(0.8rem + 0.3vw);
+  font-size: calc(0.7rem + 0.3vw);
+}
+
+h5 {
+  font-size: 0.7rem;
 }
 
 html, body {
