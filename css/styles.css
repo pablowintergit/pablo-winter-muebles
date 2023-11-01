@@ -43,21 +43,16 @@ main {
 }
 
 .header-info {
-  padding: 10px 5px;
-  background-image: url("../assets/main/images/mark-champs-Id2IIl1jOB0-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   justify-items: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 10px 5px;
+  background-image: url("../assets/main/images/mark-champs-Id2IIl1jOB0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .header-info .logo {
   width: 100px;
@@ -83,16 +78,13 @@ main {
 }
 
 .header-search {
-  width: 50%;
-  height: 50px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
   display: flex;
   flex-direction: row;
   justify-items: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 50%;
+  height: 50px;
   background-color: white;
   border-radius: 30px;
   border: 1px solid gray;
@@ -252,12 +244,6 @@ main {
 }
 
 .product-relation-group {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  row-gap: 5px; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -384,8 +370,9 @@ main {
   flex-wrap: wrap; */
   display: flex;
   flex-direction: row;
+  justify-content: center;
   justify-items: center;
-  align-items: center;
+  align-items: initial;
   flex-wrap: wrap;
   width: 95%;
   height: 300px;
@@ -462,6 +449,9 @@ main {
 .category-container {
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 100px;
 }
 .category-container .category-header-container {
@@ -479,13 +469,6 @@ main {
   margin: 10px auto;
 }
 .category-container .catetory-group {
-  /* display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         gap: 50px;
-         flex-wrap: wrap;
-  */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -555,11 +538,6 @@ main {
 }
 
 #bedOptions {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: start;
-  align-items: flex-start; */
   display: flex;
   flex-direction: row;
   justify-content: start;

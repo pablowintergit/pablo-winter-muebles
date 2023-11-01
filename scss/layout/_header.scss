@@ -2,16 +2,11 @@
 @use '../utilities/mixins';
 
 .header-info{
+    @include mixins.flex-display($flex-layout:v.$flex-layout-row,$justify-content:space-around);
     padding: 10px 5px;
     background-image: url('../assets/main/images/mark-champs-Id2IIl1jOB0-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; */
-    @include mixins.flex-display($flex-layout:v.$flex-layout-row,$justify-content:space-around);
         .logo{
             width: 100px;
             aspect-ratio: 1/1;
@@ -30,12 +25,9 @@
 }
 
 .header-search{
+    @include mixins.flex-display($flex-layout:v.$flex-layout-row);
     width: 50%;
     height: 50px;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
-    @include mixins.flex-display($flex-layout:v.$flex-layout-row);
     background-color: white;
     border-radius: 30px;
     border:1px solid gray;

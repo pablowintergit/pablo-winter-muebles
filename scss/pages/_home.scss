@@ -3,13 +3,9 @@
 
 //Categorias
 .category-container{
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-
+    @include mixins.flex-display($flex-layout:v.$flex-layout-column,$gap:100px);
     .category-header-container{
         text-align: center;
-
         .category-header{
             display: inline-block;
             text-align: center; 
@@ -24,15 +20,7 @@
     }
 
     .catetory-group{
-        /* display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        flex-wrap: wrap;
- */
         @include mixins.flex-display($flex-layout:v.$flex-layout-row,$justify-content:center,$gap:50px);
-
         .category-option{
             width: 400px;
             aspect-ratio: 1/1;
