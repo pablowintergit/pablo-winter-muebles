@@ -2,8 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/styles.css">
-    <title>Camas</title>
+    <title>Mesas de Luz</title>
 </head>
 <body>
     <header>
@@ -21,83 +23,223 @@
                 <li>Av. Corrientes 1050 Cordoba</li>
             </ul>
         </section>
-        <nav id="menuContainer">
-            <ul class="menu">
-                <li class="menu-item"><a href="../../index.html">Inicio</a></li>
-                <li class="menu-item">
-                    <a href="#">Dormitorios</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../products/beds.html">Camas</a></li>
-                        <li><a href="../products/light-tables.html">Mesas de Luz</a></li>        
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#">Comedor</a>
-                    <ul class="dropdown-menu" >
-                        <li><a href="../products/beds.html"">Juegos de Mesa</a></li>
-                        <li><a href="../products/light-tables.html">Aparadores</a></li>        
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="../../pages/gallery/gallery.html">Galeria</a></li>
-                <li class="menu-item"><a href="../../pages/company/company.html">Empresa</a></li>
-                <li class="menu-item"><a href="../../pages/contact/contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>    
+    </header>
+    <nav class="navbar sticky-top  navbar-expand-md navbar--customized">
+        <div class="container-fluid  justify-content-end justify-content-md-center ">
+            <button class="navbar-toggler navbar-toggler--customized" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-toggler-icon--customized"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse--customized" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--customized" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link--customized" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dormitorios
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu--customized">
+                            <li><a class="dropdown-item dropdown-item--customized" href="../../pages/products/beds.html">Camas</a></li>
+                            <li><a class="dropdown-item dropdown-item--customized" href="../../pages/products/light-tables.html">Mesas de Luz</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link--customized" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Comedor
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu--customized">
+                            <li><a class="dropdown-item dropdown-item--customized" href="../../pages/products/beds.html">Juegos de Mesa</a></li>
+                            <li><a class="dropdown-item dropdown-item--customized" href="../../pages/products/light-tables.html">Aparadores</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--customized" href="../../pages/gallery/gallery.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--customized" href="../../pages/company/company.html">Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--customized" href="../../pages/contact/contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
     <main>
+        <section class="nav-path">
+            <a class="button-link" href="../../index.html#bedRooms">Dormitorios</a>
+            <span>></span>
+            <span>Mesas de Luz</span>
+        </section>
         <section>
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="" alt="Mesa de Luz 1">
-                    </figure>
-                    <div>
-                        <h5>New Confort Light</h5>
-                        <span>Precio Online $150.00</span>>
-                        <span>30% Off en una cuota</span>>
-                        <span>3 cuotas sin interes $50.000</span>>
+            <div class="product-list-container">
+                <div class="container px-4">
+                    <div class="row">
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-1.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>
+                                    <span>Mesa de luz Retro Palermo</span>
+                                    <h4>Precio online $127.060</h4>
+                                    <p>10% OFF con Transferencia</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-2.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>
+                                    <span>Mesa de luz Dante 2 cajones y hueco</span>
+                                    <h4>Precio online $175.784</h4>
+                                    <p>20% OFF en Efectivo $140.627</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-4.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>
+                                    <span>Mesa de luz Ari</span>
+                                    <h4>Precio online $137.123</h4>
+                                    <p>20% OFF en Efectivo $109.698</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-3.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>
+                                    <span>Mesa de luz Verona</span>
+                                    <h4>Precio online $137.120</h4>
+                                    <p>20% OFF en Efectivo $109.696</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-7.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>
+                                    <span>Mesa de luz Génova</span>
+                                    <h4>Precio online $137.120</h4>
+                                    <p>20% OFF en Efectivo $109.696 </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-9.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>     
+                                    <span>Mesa de luz Retro Palermo</span>
+                                    <h4>Precio online $127.060</h4>
+                                    <p>20% OFF en Efectivo $101.648</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-11.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>                                 
+                                    <span>Mesa de luz Génova XL</span>
+                                    <h4>Precio online $164.794</h4>
+                                    <p>20% OFF en Efectivo $131.835</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-12.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>    
+                                    <span>Mesa de luz Milano Enchapada</span>
+                                    <h4>Precio online $185.195</h4>
+                                    <p>20% OFF en Efectivo $148.156</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-13.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>                      
+                                    <span>Mesa de luz flotante Otto</span>
+                                    <h4>Precio online $19.275</h4>
+                                    <p> 20% OFF en Efectivo $15.420</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-14.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>
+                                    <span>Mesa de luz Génova</span>
+                                    <h4>Precio online $137.120</h4>
+                                    <p>20% OFF en Efectivo $109.696 </p>
+                                </div>
+                            </a>
+                        </div>    
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-15.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>
+                                    <span>Mesa de luz Dante 2 cajones y hueco</span>
+                                    <h4>Precio online $175.784</h4>
+                                    <p>20% OFF en Efectivo $140.627</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-16.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>
+                                    <span>Mesa de luz Ari</span>
+                                    <h4>Precio online $137.123</h4>
+                                    <p>20% OFF en Efectivo $109.698</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-product-list col-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="./product-detalis/bed.html">
+                                <figure class="product-thumbnail">
+                                    <img src="../../assets/light-tables/images/light-table-4.jpeg" alt="Juego de Mesa Beta Line">
+                                </figure>
+                                <div>                         
+                                    <span>Mesa de luz Dante 2 cajones y puerta</span>
+                                    <h4>Precio online $190.622</h4>
+                                    <p>20% OFF en Efectivo $152.498</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="" alt="Mesa de Luz 2">
-                    </figure>
-                    <div>
-                        <h5>New Confort Light</h5>
-                        <span>Precio Online $150.00</span>>
-                        <span>30% Off en una cuota</span>>
-                        <span>3 cuotas sin interes $50.000</span>>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="" alt="Mesa de Luz 3">
-                    </figure>
-                    <div>
-                        <h5>New Confort Light</h5>
-                        <span>Precio Online $150.00</span>>
-                        <span>30% Off en una cuota</span>>
-                        <span>3 cuotas sin interes $50.000</span>>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="" alt="Mesa Luz 4">
-                    </figure>
-                    <div>
-                        <h5>New Confort Light</h5>
-                        <span>Precio Online $150.00</span>>
-                        <span>30% Off en una cuota</span>>
-                        <span>3 cuotas sin interes $50.000</span>>
-                    </div>
-                </a>
-            </div>
+                </div>
+            </div>        
         </section>
     </main>
     <footer class="footer">
@@ -107,7 +249,7 @@
                     <li><a href="../products/beds.html">Camas</a></li>
                     <li><a href="../products/light-table.html">Mesas de Luz</a></li>        
                     <li><a href="../products/beds.html">Juegos de Mesa</a></li>
-                    <li><a href="../products/light-table.html">Aparadores</a></li>            
+                    <li><a href="../products/light-table.html">Aparadores</a></li>        
                 </ul>
         </div>
         <div id="contacMedia" class="footer-content">
@@ -134,5 +276,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
