@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style: none;
+}
+
 //Si bien estan resetados arriba los tuve que volver a resetear
 // por un problema con la especificidad, es un problema con boostrap
 figure,p{

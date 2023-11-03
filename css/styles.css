@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 figure, p {
   margin: 0px;
 }
@@ -310,6 +314,16 @@ main {
   object-fit: cover;
 }
 
+.icon-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-inline img {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
 .carousel-control-prev-icon--customized {
   background-image: url("../assets/main/images/chevron-left-solid.svg");
 }
@@ -320,8 +334,6 @@ main {
 
 /*Productos relacionados y destacados*/
 .card-product-containter {
-  /* display: flex;
-  justify-content: center; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -385,9 +397,6 @@ main {
 
 /*Ficha Producto*/
 .card-product-detail {
-  /* display: flex;
-  justify-content: center;
-  flex-wrap: wrap; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -600,18 +609,42 @@ main {
   text-align: center;
 }
 
+.contact-container {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#contactInfo {
+  background-color: white;
+  border: 1px solid #473144;
+  border-radius: 15px;
+}
+#contactInfo ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  margin-top: 10px;
+  padding-left: 0;
+}
+#contactInfo ul li {
+  position: relative;
+  list-style: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  margin-bottom: 20px;
+  word-break: break-all;
+}
+
 #contactForm {
-  /* display: flex;
-  flex-direction: column;
-  row-gap: 20px; */
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: initial;
   flex-wrap: wrap;
   row-gap: 20px;
-  width: 500px;
-  margin: 30px auto;
   background-color: #473144;
   padding: 10px 5px;
   border-radius: 15px;
@@ -665,7 +698,6 @@ main {
 @media screen and (max-width: 576px) {
   #contactForm {
     box-shadow: none;
-    width: 95%;
   }
   #contactForm label {
     font-size: 2.4vh;
