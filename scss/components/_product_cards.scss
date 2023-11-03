@@ -3,8 +3,6 @@
 
 /*Productos relacionados y destacados*/
 .card-product-containter{
-    /* display: flex;
-    justify-content: center; */
     @include mixins.flex-display($flex-layout:v.$flex-layout-row,$justify-content: center);
     width: 100%;
 }
@@ -62,9 +60,6 @@
 
 /*Ficha Producto*/
 .card-product-detail{
-    /* display: flex;
-    justify-content: center;
-    flex-wrap: wrap; */
     @include mixins.flex-display($flex-layout:v.$flex-layout-row,$align-items:initial,$justify-content:center);
     width: 95%;
     height: 300px;
