@@ -1,5 +1,6 @@
 @use '../utilities/variables' as v;
 @use '../utilities/mixins';
+@use '../base/base-classes';
 
 .header-info{
     @include mixins.flex-display($flex-layout:v.$flex-layout-row,$justify-content:space-around);
@@ -8,15 +9,12 @@
     background-size: cover;
     background-position: center;
         .logo{
+            @extend .thumbnail;
             width: 100px;
             aspect-ratio: 1/1;
-            height: auto;
-            overflow: auto;
             border-radius: 15px;
                 img{
-                    width: 100%;
                     height: 100%;
-                    object-fit: cover;                
                 }        
         };
     @include mixins.mobile(){

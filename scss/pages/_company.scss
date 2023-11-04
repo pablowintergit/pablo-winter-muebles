@@ -1,5 +1,7 @@
 @use '../utilities/variables' as v;
 @use '../utilities/mixins';
+@use '../base/base-classes';
+
 #companySection{
     margin: 10px;
     margin-bottom: 10px;
@@ -22,17 +24,13 @@
         }
 
         .company-thumbnail{
+            @extend .thumbnail;
+            overflow:initial;
             max-width: 400px;
             aspect-ratio: 1/1;
-            height: auto;
             border: 1px #cccccc solid;
             padding: 4px;
             margin: auto; 
-                img{
-                    width: 100%;
-                    object-fit: cover;
-                }            
-
                 &-left{
                     margin-right: 10px;
                     clear: left;

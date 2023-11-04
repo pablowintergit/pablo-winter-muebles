@@ -1,5 +1,6 @@
 @use '../utilities/variables' as v;
 @use '../utilities/mixins';
+@use '../base/base-classes';
 
 /*Productos relacionados y destacados*/
 .card-product-containter{
@@ -73,16 +74,11 @@
     margin:0 auto ;
     margin-top: 20px;
         &-thumbnail{
+            @extend .thumbnail;
             width: 50%;
             min-width: 150px;
-            height: auto;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
-            overflow: auto;
-                img{
-                    width: 100%;
-                    object-fit: cover;
-                }
         }
         >div{
             width: 50%;

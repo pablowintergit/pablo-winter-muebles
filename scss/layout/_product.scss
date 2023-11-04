@@ -1,5 +1,6 @@
 @use '../utilities/variables' as v;
 @use '../utilities/mixins';
+@use '../base/base-classes';
 
 .product-list-container{
     margin-top: 5vh;
@@ -50,16 +51,11 @@
 }
 
 .product-thumbnail{
+    @extend .thumbnail;
     width: 100%;
     aspect-ratio: 1/1;
-    height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    overflow: auto;
-        img{
-            width: 100%;
-            object-fit: cover;
-        }
 }
 
 

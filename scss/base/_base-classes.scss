@@ -1,0 +1,8 @@
+.thumbnail{
+    height: auto;
+    overflow: auto;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+}
