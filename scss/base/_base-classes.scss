@@ -1,4 +1,4 @@
-.thumbnail{
+%thumbnail{
     height: auto;
     overflow: auto;
         img{
@@ -7,7 +7,7 @@
         }
 }
 
-.square-thumbnail{
-    @extend .thumbnail;
+%square-thumbnail{
+    @extend %thumbnail;
     aspect-ratio: 1/1;
 }

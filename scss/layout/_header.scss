@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
         .logo{
-            @extend .thumbnail;
+            @extend %thumbnail;
             width: 100px;
             aspect-ratio: 1/1;
             border-radius: 15px;

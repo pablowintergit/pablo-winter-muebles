@@ -7,7 +7,7 @@
     row-gap: 2vw;
     column-gap: 2vh;
         figure{
-            @extend .thumbnail;
+            @extend %thumbnail;
             border: 1px #cccccc solid;
             padding: 4px;
             margin: auto; 

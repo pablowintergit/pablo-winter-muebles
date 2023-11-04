@@ -66,16 +66,16 @@ main {
   align-items: center;
 }
 
-.thumbnail, .company-section .company-thumbnail, .gallery-container figure, .card-product-detail-thumbnail, .header-info .logo, .square-thumbnail, .product-thumbnail, #footerMedia .icon-image {
+.company-section .company-thumbnail, .gallery-container figure, .card-product-detail-thumbnail, .header-info .logo, .product-thumbnail, #footerMedia .icon-image {
   height: auto;
   overflow: auto;
 }
-.thumbnail img, .company-section .company-thumbnail img, .gallery-container figure img, .card-product-detail-thumbnail img, .header-info .logo img, .square-thumbnail img, .product-thumbnail img, #footerMedia .icon-image img {
+.company-section .company-thumbnail img, .gallery-container figure img, .card-product-detail-thumbnail img, .header-info .logo img, .product-thumbnail img, #footerMedia .icon-image img {
   width: 100%;
   object-fit: cover;
 }
 
-.square-thumbnail, .product-thumbnail, #footerMedia .icon-image {
+.product-thumbnail, #footerMedia .icon-image {
   aspect-ratio: 1/1;
 }
 

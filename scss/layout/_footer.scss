@@ -34,7 +34,7 @@
     }
     
     .icon-image{
-        @extend .square-thumbnail;
+        @extend %square-thumbnail;
         width: 30px;
         background-color:var(--main-backcolor);
             img{
