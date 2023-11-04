@@ -20,11 +20,13 @@
             color:black;
             background-color: #fff;
         }
-        &.card-product-outstanding{
+        &--outstanding{
+            @extend .card-product-relation;
             background-color:var(--product-outstanding--backcolor);
             color: white;
         }
-        &.card-product-related{
+        &--related{
+            @extend .card-product-relation;
             background-color:var(--product-detail--backcolor);
             color: white;
         }
