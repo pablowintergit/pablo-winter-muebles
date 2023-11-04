@@ -61,23 +61,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:100px;
+    margin:3vh 20vw;
         img{
             width: 50px;
             aspect-ratio: 1/1;
             height: auto;
             display: inline-block;
         }
-}
 
-#follow-button{
-    display: inline-block;
-    background-color: black;
-    color:white;
-    text-align: center;
-    border-radius: 10px;
-    padding: 3px;
-    font-size: 2em;
-    width: 358px;
-}
+        #follow-button{
+            display: inline-block;
+            background-color: black;
+            color:white;
+            text-align: center;
+            border-radius: 10px;
+            padding: 3px;
+            font-size: 1.5rem;
+        }
 
+        @include mixins.mobile(){
+            margin:3vh 10vw;
+            font-size: 1rem;
+            #follow-button{
+                font-size: 4vw;
+            }
+        }
+}

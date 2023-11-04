@@ -538,7 +538,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px;
+  margin: 3vh 20vw;
 }
 #follow-section img {
   width: 50px;
@@ -546,16 +546,23 @@ main {
   height: auto;
   display: inline-block;
 }
-
-#follow-button {
+#follow-section #follow-button {
   display: inline-block;
   background-color: black;
   color: white;
   text-align: center;
   border-radius: 10px;
   padding: 3px;
-  font-size: 2em;
-  width: 358px;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 576px) {
+  #follow-section {
+    margin: 3vh 10vw;
+    font-size: 1rem;
+  }
+  #follow-section #follow-button {
+    font-size: 4vw;
+  }
 }
 
 #bedOptions {
