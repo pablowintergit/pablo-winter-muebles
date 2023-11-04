@@ -379,7 +379,7 @@ main {
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
-  border: 1px solid var(--main-backcolor);
+  transition: transform 300ms ease;
 }
 .card-product-list div {
   color: black;
@@ -387,9 +387,14 @@ main {
   padding-top: 10px;
 }
 .card-product-list:hover {
-  /* transform: scale(1.05); */
-  translate: -10px -10px;
+  transform: translate(-10px, -10px);
   box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
+}
+@media screen and (max-width: 576px) {
+  .card-product-list:hover {
+    translate: unset;
+    box-shadow: unset;
+  }
 }
 
 .card-conteiner {

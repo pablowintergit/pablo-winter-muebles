@@ -49,16 +49,19 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
-    border:1px solid var(--main-backcolor);
+    transition: transform 300ms ease;
         div{
             color:black;
             background-color: #fff;
             padding-top: 10px;
         }
         &:hover{
-            /* transform: scale(1.05); */
-            translate: -10px -10px;
+            transform:translate(-10px, -10px);
             box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
+            @include mixins.mobile(){
+                translate: unset;
+                box-shadow:unset ;
+            }
         }
 }
 
