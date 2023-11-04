@@ -5,8 +5,8 @@
   --shadow:rgba(0, 0, 0, 0.3215686275);
   --catogory-header:#82724E;
   --card-product:#60492C;
-  --product-outstanding--backcolor:red;
-  --product-detail--backcolor:#A20021;
+  --product-outstanding--backcolor:#A5402D;
+  --product-detail--backcolor:#A5402D;
 }
 
 *, ul, ol {
@@ -343,8 +343,20 @@ main {
   width: 300px;
   height: auto;
   text-align: center;
-  padding: 8px 8px;
-  border-radius: 10px;
+  padding: 3px 3px;
+  border-radius: 5px;
+  color: white;
+  transition: transform 700ms ease;
+}
+.card-product-relation:hover, .card-product-relation--related:hover, .card-product-relation--outstanding:hover {
+  transform: scale(1.2);
+  box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
+}
+@media screen and (max-width: 576px) {
+  .card-product-relation:hover, .card-product-relation--related:hover, .card-product-relation--outstanding:hover {
+    translate: unset;
+    box-shadow: unset;
+  }
 }
 .card-product-relation div, .card-product-relation--related div, .card-product-relation--outstanding div {
   padding-top: 10px;
@@ -355,11 +367,9 @@ main {
 }
 .card-product-relation--outstanding {
   background-color: var(--product-outstanding--backcolor);
-  color: white;
 }
 .card-product-relation--related {
   background-color: var(--product-detail--backcolor);
-  color: white;
 }
 @media screen and (max-width: 576px) {
   .card-product-relation, .card-product-relation--related, .card-product-relation--outstanding {
@@ -387,7 +397,7 @@ main {
   padding-top: 10px;
 }
 .card-product-list:hover {
-  transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px) scale(1.05);
   box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
 }
 @media screen and (max-width: 576px) {
