@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="./assets/main/images/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Encuentra Muebles de Calidad | Pablo Winter Muebles</title>
 </head>
@@ -89,18 +89,18 @@
     <main>
         <section class="category-container">
             <section>
-                <div class="category-header-container">
+                <div class="category-header-container" data-aos="flip-left" data-aos-delay="200" data-aos-duration="2000">
                     <h1 id="#bedRooms" class="category-header">Dormitorios</h1>
                 </div>
                 <div class="catetory-group">
-                    <a href="./pages/products/beds.html">
+                    <a href="./pages/products/beds.html" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
                         <figure id="bedCategory" class="category-option">
                             <div class="overlay">
                                 <h2>Camas</h2>
                             </div>
                         </figure>
                     </a>
-                    <a href="./pages/products/light-tables.html">
+                    <a href="./pages/products/light-tables.html" data-aos="fade-left" data-aos-delay="400" data-aos-duration="2000">
                         <div>
                             <figure id="lightTableCategory" class="category-option">
                                 <div class="overlay">
@@ -112,18 +112,18 @@
                 </div>
             </section>
             <section>
-                <div class="category-header-container">
+                <div class="category-header-container" data-aos="flip-right" data-aos-delay="200" data-aos-duration="2000">
                     <h1 id="#diningRoom" class="category-header">Comedor</h1>
                 </div>
                 <div class="catetory-group">
-                    <a href="./pages/products/beds.html">
+                    <a href="./pages/products/beds.html" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
                         <figure id="diningRoomCategory" class="category-option">
                             <div class="overlay">
                                 <h2>Juegos de Mesa</h2>
                             </div>
                         </figure>
                     </a>
-                    <a href="./pages/products/light-tables.html">
+                    <a href="./pages/products/light-tables.html" data-aos="fade-left" data-aos-delay="400" data-aos-duration="2000">
                         <div>
                             <figure id="sideBarCategory" class="category-option">
                                 <div class="overlay">
@@ -151,7 +151,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="card-product-relation--outstanding">
+                <div class="card-product-relation--outstanding" >
                     <a href="./pages/products/product-detalis/bed.html">
                         <figure class="product-thumbnail">
                             <img src="./assets/light-tables/images/light-table-1.jpeg" alt="Juego de Mesa Beta Line">
@@ -162,7 +162,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="card-product-relation--outstanding">
+                <div class="card-product-relation--outstanding" >
                     <a href="./pages/products/product-detalis/bed.html">
                         <figure class="product-thumbnail">
                             <img src="./assets/sideboards/images/side-board-1.jpeg" alt="Juego de Mesa Beta Line">
@@ -283,6 +283,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
