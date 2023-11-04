@@ -6,3 +6,8 @@
             object-fit: cover;
         }
 }
+
+.square-thumbnail{
+    @extend .thumbnail;
+    aspect-ratio: 1/1;
+}

@@ -34,9 +34,8 @@
     }
     
     .icon-image{
-        @extend .thumbnail;
+        @extend .square-thumbnail;
         width: 30px;
-        aspect-ratio: 1/1;
         background-color:var(--main-backcolor);
             img{
                 object-position: center;

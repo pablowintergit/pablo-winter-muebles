@@ -51,9 +51,8 @@
 }
 
 .product-thumbnail{
-    @extend .thumbnail;
+    @extend .square-thumbnail;
     width: 100%;
-    aspect-ratio: 1/1;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
