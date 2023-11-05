@@ -177,7 +177,8 @@ main {
 
 #footerMedia {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  column-gap: 20px;
 }
 #footerMedia li {
   display: inline-block;
@@ -346,10 +347,10 @@ main {
   padding: 3px 3px;
   border-radius: 5px;
   color: white;
-  transition: transform 700ms ease;
+  transition: transform 700ms ease !important;
 }
 .card-product-relation:hover, .card-product-relation--related:hover, .card-product-relation--outstanding:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) !important;
   box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
 }
 @media screen and (max-width: 576px) {
@@ -397,13 +398,16 @@ main {
   padding-top: 10px;
 }
 .card-product-list:hover {
-  transform: translate(-10px, -10px) scale(1.05);
+  transform: translate(-10px, -10px) scale(1.05) !important;
   box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
 }
 @media screen and (max-width: 576px) {
+  .card-product-list {
+    transition: none;
+  }
   .card-product-list:hover {
-    translate: unset;
-    box-shadow: unset;
+    transform: none;
+    box-shadow: none;
   }
 }
 

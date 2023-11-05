@@ -26,8 +26,8 @@
 
 #footerMedia{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: start;
+    column-gap: 20px;
     li{
         display: inline-block;
         background-color: #fff;

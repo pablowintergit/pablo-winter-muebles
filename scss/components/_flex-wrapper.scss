@@ -1,0 +1,6 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins';
+
+.flex-horizontal-wrapper{
+    @include mixins.flex-display($flex-layout:v.$flex-layout-row, $justify-content:center);
+}

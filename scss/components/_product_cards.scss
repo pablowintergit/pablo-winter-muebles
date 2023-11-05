@@ -57,7 +57,7 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
-    transition: transform 300ms ease !important;
+    transition: transform 300ms ease;
         div{
             color:black;
             background-color: #fff;
@@ -66,11 +66,14 @@
         &:hover{
             transform:translate(-10px, -10px) scale(1.05)!important;
             box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
-            @include mixins.mobile(){
-                translate: unset;
-                box-shadow:unset ;
-            }
         }
+    @include mixins.mobile(){
+        transition: none;
+        &:hover{
+            transform: none;
+            box-shadow:none;
+        }
+    }
 }
 
 .card-conteiner{
