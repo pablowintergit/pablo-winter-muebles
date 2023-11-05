@@ -15,13 +15,11 @@
     padding:3px 3px;
     border-radius: 5px;
     color: white;
-    transition: transform 700ms ease !important;
+    transition: transform 700ms ease;
         &:hover{
-            transform:scale(1.2)!important;
-            box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
+            transform:scale(1.2);
             @include mixins.mobile(){
-                translate: unset;
-                box-shadow:unset ;
+                transform: none;
             }
         }
         div{
@@ -41,9 +39,7 @@
         }
     @include mixins.mobile(){
         width: 60vw;
-        div{
-            padding-top: 5px;
-        }
+        transition: none;
     }
 }
 
@@ -64,7 +60,7 @@
             padding-top: 10px;
         }
         &:hover{
-            transform:translate(-10px, -10px) scale(1.05)!important;
+            transform:translate(-10px, -10px) scale(1.05);
             box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
         }
     @include mixins.mobile(){

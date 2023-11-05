@@ -347,16 +347,14 @@ main {
   padding: 3px 3px;
   border-radius: 5px;
   color: white;
-  transition: transform 700ms ease !important;
+  transition: transform 700ms ease;
 }
 .card-product-relation:hover, .card-product-relation--related:hover, .card-product-relation--outstanding:hover {
-  transform: scale(1.2) !important;
-  box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
+  transform: scale(1.2);
 }
 @media screen and (max-width: 576px) {
   .card-product-relation:hover, .card-product-relation--related:hover, .card-product-relation--outstanding:hover {
-    translate: unset;
-    box-shadow: unset;
+    transform: none;
   }
 }
 .card-product-relation div, .card-product-relation--related div, .card-product-relation--outstanding div {
@@ -375,9 +373,7 @@ main {
 @media screen and (max-width: 576px) {
   .card-product-relation, .card-product-relation--related, .card-product-relation--outstanding {
     width: 60vw;
-  }
-  .card-product-relation div, .card-product-relation--outstanding div, .card-product-relation--related div {
-    padding-top: 5px;
+    transition: none;
   }
 }
 
@@ -398,7 +394,7 @@ main {
   padding-top: 10px;
 }
 .card-product-list:hover {
-  transform: translate(-10px, -10px) scale(1.05) !important;
+  transform: translate(-10px, -10px) scale(1.05);
   box-shadow: 10px 10px 10px 5px rgba(39, 40, 40, 0.347);
 }
 @media screen and (max-width: 576px) {
