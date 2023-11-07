@@ -1,36 +1,56 @@
-$delay-four-columns:0;
-$delay-three-columns:0;
-$delay-two-columns:0;
-$delay-one-column:0;
+$delay:0;
 
-
-@for $i from 1 through 20{
-    .delay-item-#{$i}{
-        @for $j from 1 through 4{
+//Cuatro columnas
+@for $i from 1 through 4{
+    @for $j from 1 through 20{
+        .delay-item-#{$j}{
             @media screen and (max-width> 996px){
-                transition-delay: #{$delay-four-columns} + "s";
+                transition-delay: #{$delay} + "s";
             }
-            $delay-four-columns:$delay-four-columns+200;
-            @debug $delay-four-columns;
         }
-
-        @for $j from 1 through 3{
-            @media screen and (max-width> 996px){
-                transition-delay: #{$delay-three-columns} + "s";
-            }
-            $delay-three-columns:$delay-three-columns+200;
-            @debug $delay-three-columns;
+        $delay:$delay+200;
+        @if $delay>600{
+            $delay:0;
         }
-
-        @for $j from 1 through 2{
-            @media screen and (max-width< 768px){
-                transition-delay: #{$delay-two-columns} + "s";
-            }
-            $delay-two-columns:$delay-two-columns+200;
-        }
-
-        @media screen and (max-width< 576px){
-            transition-delay:0s;
-        }   
-    }    
+    }
 }
+
+//Tres columnas
+@for $i from 1 through 3{
+    @for $j from 1 through 20{
+        .delay-item-#{$j}{
+            @media screen and (min-width < 996px){
+                transition-delay: #{$delay} + "s";
+            }
+        }
+        $delay:$delay+200;
+        @if $delay>400{
+            $delay:0;
+        }
+    }
+}
+
+//Dos columnas
+@for $i from 1 through 2{
+    @for $j from 1 through 20{
+        .delay-item-#{$j}{
+            @media screen and (min-width< 768px){
+                transition-delay: #{$delay} + "s";
+            }
+        }
+        $delay:$delay+200;
+        @if $delay>200{
+            $delay:0;
+        }
+    }
+}
+
+@for $j from 1 through 20{
+    .delay-item-#{$j}{
+        @media screen and (min-width< 576px){
+            transition-delay: 0s;
+        }
+    }
+}
+
+
