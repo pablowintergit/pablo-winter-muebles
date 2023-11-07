@@ -1,0 +1,36 @@
+$delay-four-columns:0;
+$delay-three-columns:0;
+$delay-two-columns:0;
+$delay-one-column:0;
+
+
+@for $i from 1 through 20{
+    .delay-item-#{$i}{
+        @for $j from 1 through 4{
+            @media screen and (max-width> 996px){
+                transition-delay: #{$delay-four-columns} + "s";
+            }
+            $delay-four-columns:$delay-four-columns+200;
+            @debug $delay-four-columns;
+        }
+
+        @for $j from 1 through 3{
+            @media screen and (max-width> 996px){
+                transition-delay: #{$delay-three-columns} + "s";
+            }
+            $delay-three-columns:$delay-three-columns+200;
+            @debug $delay-three-columns;
+        }
+
+        @for $j from 1 through 2{
+            @media screen and (max-width< 768px){
+                transition-delay: #{$delay-two-columns} + "s";
+            }
+            $delay-two-columns:$delay-two-columns+200;
+        }
+
+        @media screen and (max-width< 576px){
+            transition-delay:0s;
+        }   
+    }    
+}
