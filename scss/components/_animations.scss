@@ -1,11 +1,11 @@
 $delay:0;
 
-//Cuatro columnas
+//Cuatro columnas por capacidad
 @for $i from 1 through 4{
     @for $j from 1 through 20{
         .delay-item-#{$j}{
-            @media screen and (max-width> 996px){
-                transition-delay: #{$delay} + "s";
+            @media screen and (min-width: 1025px){
+                transition-delay: #{$delay} + "s !important";
             }
         }
         $delay:$delay+200;
@@ -19,8 +19,8 @@ $delay:0;
 @for $i from 1 through 3{
     @for $j from 1 through 20{
         .delay-item-#{$j}{
-            @media screen and (min-width < 996px){
-                transition-delay: #{$delay} + "s";
+            @media screen and (max-width : 996px){
+                transition-delay: #{$delay} + "s !important";
             }
         }
         $delay:$delay+200;
@@ -34,8 +34,8 @@ $delay:0;
 @for $i from 1 through 2{
     @for $j from 1 through 20{
         .delay-item-#{$j}{
-            @media screen and (min-width< 768px){
-                transition-delay: #{$delay} + "s";
+            @media screen and (max-width: 768px){
+                transition-delay: #{$delay} + "s !important";
             }
         }
         $delay:$delay+200;
@@ -47,10 +47,8 @@ $delay:0;
 
 @for $j from 1 through 20{
     .delay-item-#{$j}{
-        @media screen and (min-width< 576px){
-            transition-delay: 0s;
+        @media screen and (max-width: 576px){
+            transition-delay: 0s !important;
         }
     }
 }
-
-
