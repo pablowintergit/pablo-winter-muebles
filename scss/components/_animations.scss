@@ -1,54 +1,47 @@
-$delay:0;
+$delay-4-columns:0;
+$delay-3-columns:0;
+$delay-2-columns:0;
 
-//Cuatro columnas por capacidad
-@for $i from 1 through 4{
-    @for $j from 1 through 20{
-        .delay-item-#{$j}{
-            @media screen and (min-width: 1025px){
-                transition-delay: #{$delay} + "s !important";
-            }
-        }
-        $delay:$delay+200;
-        @if $delay>600{
-            $delay:0;
+@for $i from 1 through 20{
+
+    @media screen and (min-width: 1025px){
+        .delay-item-#{$i}{
+            transition-delay: #{$delay-4-columns} + "ms !important";
         }
     }
-}
 
-//Tres columnas
-@for $i from 1 through 3{
-    @for $j from 1 through 20{
-        .delay-item-#{$j}{
-            @media screen and (max-width : 996px){
-                transition-delay: #{$delay} + "s !important";
-            }
-        }
-        $delay:$delay+200;
-        @if $delay>400{
-            $delay:0;
+    @media screen and (max-width : 996px){
+        .delay-item-#{$i}{
+            transition-delay: #{$delay-3-columns} + "ms !important";
         }
     }
-}
 
-//Dos columnas
-@for $i from 1 through 2{
-    @for $j from 1 through 20{
-        .delay-item-#{$j}{
-            @media screen and (max-width: 768px){
-                transition-delay: #{$delay} + "s !important";
-            }
-        }
-        $delay:$delay+200;
-        @if $delay>200{
-            $delay:0;
+    @media screen and (max-width: 768px){
+        .delay-item-#{$i}{
+            transition-delay: #{$delay-2-columns} + "ms !important";
         }
     }
-}
 
-@for $j from 1 through 20{
-    .delay-item-#{$j}{
-        @media screen and (max-width: 576px){
-            transition-delay: 0s !important;
+    @media screen and (max-width: 576px){
+        .delay-item-#{$i}{
+            transition-delay:0ms !important;
         }
+    }
+
+
+    $delay-4-columns:$delay-4-columns+200;
+    $delay-3-columns:$delay-3-columns+200;
+    $delay-2-columns:$delay-2-columns+200;
+
+    @if $delay-4-columns>600{
+        $delay-4-columns:0;
+    }
+
+    @if $delay-3-columns>400{
+        $delay-3-columns:0;
+    }
+
+    @if $delay-2-columns>200{
+        $delay-2-columns:0;
     }
 }
