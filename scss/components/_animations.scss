@@ -2,6 +2,17 @@ $delay-4-columns:0;
 $delay-3-columns:0;
 $delay-2-columns:0;
 
+
+//Explicacion de la implementacion del for
+//La libreia AOS.js produce animaciones en el scroll de la pagina
+//Trae una custom property en la cual se le indica el delay
+//Inicialmente use esa property en el html para que las tarjetas
+//se vallan animando no solo en el scroll sino horizontalmente
+//Pero surgio el problema que al cambiar de tamaño de pantalla los delays fijos
+//funcionan incorrectamente, obviamente porque deben seguir otro orden
+//Es a partir de ahi que pense en una solucion en css que generara dinamicamente
+//los delays de acuerdo al tamaño de la pantalla y eso es lo que hace el for
+//El incremento es de 200.
 @for $i from 1 through 20{
 
     @media screen and (min-width: 1025px){
