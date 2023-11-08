@@ -53,7 +53,8 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
-    transition: transform 300ms ease;
+    box-shadow: 0;
+    transition:transform 300ms ease,box-shadow 1s ease-in-out;
         div{
             color:black;
             background-color: #fff;
