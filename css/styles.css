@@ -311,6 +311,406 @@ main {
   width: 100%;
 }
 
+@media screen and (min-width: 1025px) {
+  .delay-item-1 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-1 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-1 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-1 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-2 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-2 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-2 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-2 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-3 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-3 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-3 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-3 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-4 {
+    transition-delay: 600ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-4 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-4 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-4 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-5 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-5 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-5 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-5 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-6 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-6 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-6 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-6 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-7 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-7 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-7 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-7 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-8 {
+    transition-delay: 600ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-8 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-8 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-8 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-9 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-9 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-9 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-9 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-10 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-10 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-10 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-10 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-11 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-11 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-11 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-11 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-12 {
+    transition-delay: 600ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-12 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-12 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-12 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-13 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-13 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-13 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-13 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-14 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-14 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-14 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-14 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-15 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-15 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-15 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-15 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-16 {
+    transition-delay: 600ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-16 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-16 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-16 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-17 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-17 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-17 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-17 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-18 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-18 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-18 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-18 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-19 {
+    transition-delay: 400ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-19 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-19 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-19 {
+    transition-delay: 0ms !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .delay-item-20 {
+    transition-delay: 600ms !important;
+  }
+}
+@media screen and (max-width: 996px) {
+  .delay-item-20 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delay-item-20 {
+    transition-delay: 200ms !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delay-item-20 {
+    transition-delay: 0ms !important;
+  }
+}
 .icon-inline {
   display: flex;
   justify-content: center;
@@ -387,7 +787,7 @@ main {
   overflow: hidden;
   background-color: white;
   box-shadow: 0;
-  transition: transform 300ms ease, box-shadow 1s ease-in-out;
+  transition: transform 300ms ease, box-shadow 300ms ease;
 }
 .card-product-list div {
   color: black;
