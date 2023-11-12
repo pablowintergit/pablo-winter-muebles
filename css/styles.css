@@ -72,6 +72,7 @@ main {
 }
 .company-section .company-thumbnail img, .gallery-container figure img, .card-product-detail-thumbnail img, .header-info .logo img, .product-thumbnail img, #footerMedia .icon-image img {
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
