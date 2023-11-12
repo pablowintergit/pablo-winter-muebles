@@ -252,6 +252,8 @@ main {
 
 .product-list-container {
   margin-top: 5vh;
+  display: flex;
+  justify-content: center;
 }
 
 .product-relation-section, .product-related-section {
