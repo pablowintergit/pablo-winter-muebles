@@ -1,4 +1,5 @@
 @use '../base/base-classes';
+@use '../utilities/mixins';
 
 .gallery-container{
     width: 100%;
@@ -6,6 +7,8 @@
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
     row-gap: 2vw;
     column-gap: 2vh;
+    padding:2vh 2vw;
+    padding-top: 0;
         figure{
             @extend %thumbnail;
             border: 1px #cccccc solid;
@@ -19,4 +22,8 @@
                 text-align: center;
             }                
         }
+    @include mixins.mobile(){
+        row-gap: 4vh;
+        padding:4vh 4vw;
+    }
 }
